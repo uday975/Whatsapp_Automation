@@ -1,0 +1,4 @@
+[4961:4961:0523/132859.241148:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+[4963:4976:0523/132915.559468:WARNING:sqlite_persistent_store_backend_base.cc(171)] Failed to post task from FlushAndNotifyInBackground@../../net/extras/sqlite/sqlite_persistent_store_backend_base.cc:220 to client_task_runner_.
+[4963:4976:0523/132915.559655:WARNING:sqlite_persistent_store_backend_base.cc(171)] Failed to post task from FlushAndNotifyInBackground@../../net/extras/sqlite/sqlite_persistent_store_backend_base.cc:220 to client_task_runner_.
+[4925:4925:0523/132915.618255:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
