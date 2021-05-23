@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 import time
 import calender
+import os
 
 calender = calender.Calender()
 calender.GetNameDict()
@@ -20,6 +21,7 @@ else:
 
         Options = webdriver.ChromeOptions()
         Options.add_argument('--user-data-dir={}'.format(PROFILE))
+        Options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
         Options.headless = True
         Options.add_argument(f'user-agent={user_agent}')
         Options.add_argument("--window-size=1920,1080")
@@ -33,7 +35,7 @@ else:
         Options.add_argument('--disable-dev-shm-usage')
         Options.add_argument('--no-sandbox')
 
-        driver = webdriver.Chrome(options=Options)
+        driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_PATH'), options=Options)
         driver.get('https://web.whatsapp.com/')
         
         driver.implicitly_wait(30)
