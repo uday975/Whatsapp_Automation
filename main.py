@@ -15,7 +15,7 @@ if len(calender.NameDict)<=0:
 
 else:
     for key,value in calender.NameDict.items():
-        PROFILE = '/home/uday/AndroidShare/PythonProjects/Whatsapp_Selenium/google-chrome'
+        PROFILE = os.environ.get('PROFILE_PATH')
 
         user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'
 
